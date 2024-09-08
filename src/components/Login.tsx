@@ -68,13 +68,13 @@ const Login = () => {
           type="email"
           value={email}
           placeholder="Email"
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={e => setEmail(e.target.value)}
         />
         <input
           type="text"
           value={password}
           placeholder="password"
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={e => setPassword(e.target.value)}
         />
         <button type="submit">Login</button>
       </form>

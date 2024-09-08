@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext, ReactNode } from 'react';
+import React, { createContext, useState, ReactNode } from 'react';
 
 type User = {
   email: string;
@@ -14,7 +14,9 @@ type AuthContextType = {
 
 const state = {
   user: null,
-  setUser: (user: User) => {},
+  setUser: (user: User) => {
+    console.warn('user is not yet initialized');
+  },
 };
 
 export const AppContext = createContext<AuthContextType>(state);
